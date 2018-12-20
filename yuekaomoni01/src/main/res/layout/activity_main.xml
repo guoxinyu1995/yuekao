@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <!--标题和放大镜-->
+    <com.example.yuekaomoni01.custom.TitalBarView
+        android:id="@+id/tital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--最近搜索-->
+    <com.example.yuekaomoni01.custom.WaterGroupNeameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="最近搜索"
+
+        />
+    <!--显示内容-->
+    <com.example.yuekaomoni01.custom.WaterContents
+        android:id="@+id/watercon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        />
+    <!--猜你想找-->
+    <com.example.yuekaomoni01.custom.WaterGroupNeameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="猜你想找"
+        />
+    <!--显示内容-->
+    <com.example.yuekaomoni01.custom.WaterContents
+        android:id="@+id/watercon01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        />
+</LinearLayout>
