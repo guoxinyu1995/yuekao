@@ -30,7 +30,10 @@ public class OkHttpUtils {
                 .connectTimeout(10,TimeUnit.SECONDS)
                 .readTimeout(10,TimeUnit.SECONDS)
                 .writeTimeout(10,TimeUnit.SECONDS)
-                .addInterceptor(interceptor)
+                //自定义拦截器
+                .addInterceptor(new MyInterceptior())
+                //日志拦截器
+                //.addInterceptor(interceptor)
                 .build();
     }
 
